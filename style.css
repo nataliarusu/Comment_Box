@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  background: #0c564ecc;
+  position: fixed;
+  top: 0;
+  height: 5rem;
+}
+.header h1 {
+  margin: 0 1rem;
+}
+
+#add-comment {
+  width: 8rem;
+  position: relative;
+  top: 0;
+  margin: 0 1rem;
+  background: #990c0c;
+  box-shadow: 2px 2px 2px #808080;
+  font-weight: 800;
+  animation-name: show;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+@keyframes show {
+  from {
+    top: 50%;
+  }
+  to {
+    top: 0;
+  }
+}
+.modal {
+  max-width: 450px;
+  margin: auto;
+  border: 2px solid #8ca5a3cc;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none;
+}
+input[type='text'],
+input[type='email'] {
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+.hidden {
+  display: none;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+  gap: 1rem;
+}
+
+.comment-actions {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.btn {
+  font-family: inherit;
+  text-align: center;
+  height: 2rem;
+  margin: 1rem;
+  border: 1px solid #000000b5;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 1rem;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.btn-add {
+  width: 6rem;
+  background: #3d7871;
+  box-shadow: 2px 2px 2px #808080;
+}
+.btn-add:hover {
+  background: #29534f;
+}
+.btn-add:disabled {
+  opacity: 0.8;
+  cursor: default;
+  box-shadow: none;
+}
+.btn-add:disabled:hover {
+  background: #3d7871;
+  opacity: 0.8;
+}
+#add-comment:hover,
+.btn-add:active {
+  box-shadow: none;
+}
+.btn-cancel:hover {
+  background: #903737;
+}
+.btn-cancel {
+  width: 6rem;
+  background-color: #b04a4a;
+}
+.error {
+  background-color: rgb(255 235 235 / 59%);
+}
+.required {
+  color: red;
+}
+.comments-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.comment-list {
+  margin-top: 6rem;
+  list-style: none;
+  border: 2px solid #3d7871;
+  border-radius: 0.5rem;
+  padding: 0;
+}
+.comment {
+  border-left: 2px solid #3d7871;
+  background: #3d78710a;
+  margin: 1rem;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.comment h4 {
+  margin: 0.7rem 0;
+}
+.delete{
+  align-self: flex-end;
+  background: #0c564ecc;
+  margin: 0;
+  color: black;
+}
+.delete:hover {
+  color: white;
+}
+.blank{
+  padding: 0 1rem;
+}

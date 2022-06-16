@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./Comment.js" defer></script>
+    <script src="./index.js" defer></script>
+    <title>Comment Box</title>
+  </head>
+  <body>
+    <template class="template">
+      <li class="comment">
+        <h4></h4>
+        <div></div>
+        <button class="btn delete">Delete</button>
+      </li>
+    </template>
+
+    <div class="header">
+      <h1>Comment Box</h1>
+      <button id="add-comment" class="btn">Add comment</button>
+    </div>
+
+    <div class="comments-container">
+      <ul class="comment-list"></ul>
+    </div>
+
+    <div class="modal hidden">
+      <form id="form">
+        <label for="name">Name <span class="required">*</span></label>
+        <input type="text" name="name" />
+        <label for="email">Email <span class="required">*</span></label>
+        <input
+          type="email"
+          name="email"
+          placeholder="example@co.uk"
+        />
+        <textarea
+          id="user_text"
+          name="user_text"
+          rows="4"
+          cols="50"
+          placeholder="Comment here..."
+        ></textarea>
+        <span id="text_length">140</span>
+        <div class="comment-actions">
+          <!--HTML5 now introduces a new form attribute <form id=''> equal to form attr outside of form-->
+          <div class="btn btn-cancel" form="form">Cancel</div>
+          <button class="btn btn-add" form="form" type="submit">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
