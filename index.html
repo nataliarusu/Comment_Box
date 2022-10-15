@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Indie+Flower&family=Lato:ital,wght@0,400;0,700;1,700&family=Libre+Franklin:wght@500&family=Merriweather:wght@300&family=Neonderthaw&family=Oleo+Script+Swash+Caps:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
     <script src="./Comment.js" defer></script>
     <script src="./index.js" defer></script>
@@ -32,11 +38,7 @@
         <label for="name">Name <span class="required">*</span></label>
         <input type="text" name="name" />
         <label for="email">Email <span class="required">*</span></label>
-        <input
-          type="email"
-          name="email"
-          placeholder="example@co.uk"
-        />
+        <input type="email" name="email" placeholder="example@co.uk" />
         <textarea
           id="user_text"
           name="user_text"
@@ -48,9 +50,7 @@
         <div class="comment-actions">
           <!--HTML5 now introduces a new form attribute <form id=''> equal to form attr outside of form-->
           <div class="btn btn-cancel" form="form">Cancel</div>
-          <button class="btn btn-add" form="form" type="submit">
-            Submit
-          </button>
+          <button class="btn btn-add" form="form" type="submit">Submit</button>
         </div>
       </form>
     </div>

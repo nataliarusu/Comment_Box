@@ -9,6 +9,7 @@ const submitBtn = form.querySelector('.btn-add');
 const cancelBtn = form.querySelector('.btn-cancel');
 const ul = document.querySelector('.comment-list');
 const p = document.createElement('p');
+const text_length=document.querySelector('#text_length');
 p.innerHTML = 'No comments yet';
 p.classList.add('blank');
 ul.append(p);
