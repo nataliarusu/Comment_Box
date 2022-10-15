@@ -18,4 +18,16 @@ When clicked, a form is displayed allowing the user to enter a comment.<br>
 Name, Email and Comment are required fields<br>
 If the comment exceeds 140 characters, the submit button becomes inactive.<br>
 The user can delete any of their comments after submitting them by clicking the "Delete" comment button.
+<br><br><br>
+<div>
+  <p><b>Snapshot 1.</b>:</p>
+  <img src='./imgs/1.png' alt='comments added snapshot' width='300px'></img>
+  <p>comments were added and the add button was clicked, </br>waiting for the user to add a new comment</p>
+</div>
 
+<div>
+  <p><b>Snapshot 2.</b>:</p>
+  <img src='./imgs/2.png' alt='snapshot displays user clicked the submit button with empty comment input' width='300px'></img>
+  <p>the user clicked submit button with empty comment input, </br>error style shows comment input is empty</p>
+</div>
+</div>
