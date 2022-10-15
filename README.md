@@ -1,9 +1,12 @@
 # Comment_Box
-see in action https://nataliarusu.github.io/Comment_Box/
 
+<hr>
 This project was created as part of the Founders and Coders application process.<br>
-
+Project allows a user to enter their name, email and a short comment in a form. When the user submits the form, the page shows the comment in a section alongside the author’s name.<br>
+See in action https://nataliarusu.github.io/Comment_Box/
+<hr>
 Requirments:
+
 - Use HTML form elements
 - Have inputs for a entering a name, email, and a comment
 - Have a submit button
